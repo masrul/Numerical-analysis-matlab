@@ -1,0 +1,11 @@
+m=[89 56 23 120 569]
+n=length(m);
+max=m(1); % initial guess
+for i=2:n
+        if max < m(i)
+            mid=max;
+            max=i;
+            i=mid;  
+        end
+end
+z=i
